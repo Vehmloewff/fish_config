@@ -91,7 +91,10 @@ function fish_prompt
 
     set_color $dark --background $primary
     echo -n $arrow
-    echo -n " "
+    set_color normal
+
+    set_color $light --background $primary
+    echo -n " Yes, Master? "
     set_color normal
 
     set_color $primary
